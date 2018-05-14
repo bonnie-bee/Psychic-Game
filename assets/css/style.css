@@ -1,0 +1,16 @@
+p{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.instructions{
+    font-size: 30px;
+}
+
+.info{
+    font-size: 20px;
+}
+
+img{
+    position: fixed;
+}
