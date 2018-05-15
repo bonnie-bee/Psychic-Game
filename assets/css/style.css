@@ -1,10 +1,18 @@
+body{ 
+    background-image: url(../images/MW97.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 p{
-    font-family: 'Arial Narrow', Tahoma, sans-serif;
+    font-family: "'Times New Roman', serif";
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 10px;
 }
 
 .instructions{
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .info{
@@ -12,11 +20,15 @@ p{
 }
 
 img{
+    padding-top: 18%;
     float: left;
+    
     
 }
 
-div{
+#scores{
+    padding-top: 20%;
     float: left;
-    
+    padding-left: 12%;
+    width: 50%;
 }

@@ -13,7 +13,7 @@ window.onload = function() {
         "<p class=info> Wins: </p>" +
         "<p class=info> Losses: </p>";
         
-        document.querySelector("#game").innerHTML = html;
+        document.querySelector("#scores").innerHTML = html;
 };
 
 
@@ -116,7 +116,7 @@ document.onkeyup = function(event) {
         "<p class=info> Losses: " + losses + "</p>";
         
             
-    document.querySelector("#game").innerHTML = html;
+    document.querySelector("#scores").innerHTML = html;
 
 
 };
