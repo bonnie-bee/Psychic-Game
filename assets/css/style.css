@@ -1,16 +1,22 @@
 p{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Arial Narrow', Tahoma, sans-serif;
     text-align: center;
 }
 
 .instructions{
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .info{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 img{
-    position: fixed;
+    float: left;
+    
+}
+
+div{
+    float: left;
+    
 }
