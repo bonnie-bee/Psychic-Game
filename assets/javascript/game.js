@@ -1,6 +1,10 @@
 
 //Stuff I want on the screen when it loads
 window.onload = function() {
+    swal({
+        title: "It looks like you want to play a game. Guess the letter I'm thinking.",
+        background: "#fff9a1",
+    });
     let html = 
         "<p class=instructions>Press any letter to guess what I'm thinking</p>" +
         "<p class=info>You picked:  </p>" +
@@ -69,22 +73,24 @@ document.onkeyup = function(event) {
 
 
 //Game Mechanism
+
+//Answer Right
     if (computerPlay === userPlay){
         wins++;
         reset();
     } 
 
-
-    if ((computerPlay != userPlay) && (chances > 0)){
-        chances--;
-        guesses.push(userPlay);
-    } 
+//Answer Wrong
+    if ((guesses.indexOf(userPlay) === -1) && (letters.indexOf(userPlay) > -1)) {
+		guesses.push(userPlay);
+		chances--;
+	}
     
-    
 
+//Out of Chances
     if (chances === 0){
         swal({
-            title: '<i>Sorry</i>.  was thinking of "' + computerPlay + '". If only I could have <i>helped</i> you.',
+            title: '<i>Sorry</i>. I was thinking of "' + computerPlay + '". If only I could have <i>helped</i> you.',
             background: "#fff9a1",
         });
         losses++;
@@ -96,8 +102,6 @@ document.onkeyup = function(event) {
     console.log("user", userPlay);
     console.log("after game", computerPlay);
     console.log('guesses', guesses);
-    
-
 
 
 
